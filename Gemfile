@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.7'
 
 gem "bson_ext", "~> 1.6.4"
+gem "haml-rails", "~> 0.3.4"
 gem "mongo_mapper", "~> 0.11.2"
 
 # Bundle edge Rails instead:
