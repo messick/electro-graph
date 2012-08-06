@@ -3,12 +3,16 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 requestData = ->
-  $.getJSON 'voltage_state', (point) ->
+  $.getJSON 'voltage_state', (results) ->
     series = chart.series[0]
     shift = series.data.length > 20 # shift if the series is longer than 20
 
     # add the point
-    chart.series[0].addPoint(eval(point), true, shift)
+    chart.series[0].addPoint(eval(results.Cell1), true, shift)
+    chart.series[1].addPoint(eval(results.Cell2), true, shift)
+    chart.series[2].addPoint(eval(results.Cell3), true, shift)
+    chart.series[3].addPoint(eval(results.Cell4), true, shift)
+    chart.series[4].addPoint(eval(results.Cell5), true, shift)
 
     # call it again after one second
     setTimeout ->
@@ -51,11 +55,29 @@ $ ->
         '</b><br/>' + 
         Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) +
         '<br/>' + Highcharts.numberFormat(this.y, 2)
-  
+
     exporting:
       enabled: false
 
     series: [
-      name: 'Random data',
-      data: []
+      {
+        name: 'Cell 1'
+        data: []
+      }
+      {
+        name: 'Cell 2'
+        data: []
+      }
+      {
+        name: 'Cell 3'
+        data: []
+      }
+      {
+        name: 'Cell 4'
+        data: []
+      }
+      {
+        name: 'Cell 5'
+        data: []
+      }
     ]
