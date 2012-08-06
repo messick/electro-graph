@@ -1,5 +1,7 @@
 ElectroGraph::Application.routes.draw do
   resources :messages
+  match 'demo' => 'demo#index'
+  match 'voltage_state' => 'voltage_state#index'
   root to: 'messages#index'  
   
   # The priority is based upon order of creation:
