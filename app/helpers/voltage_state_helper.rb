@@ -1,0 +1,2 @@
+module VoltageStateHelper
+end
