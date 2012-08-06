@@ -51,9 +51,6 @@ $ ->
         '</b><br/>' + 
         Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) +
         '<br/>' + Highcharts.numberFormat(this.y, 2)
-        
-    legend:
-      enabled: false
   
     exporting:
       enabled: false
