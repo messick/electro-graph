@@ -1,0 +1,6 @@
+development:
+  sessions:
+    default:
+      database: electro_graph
+      hosts:
+        - localhost:27017
