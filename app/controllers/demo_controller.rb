@@ -1,2 +1,0 @@
-class DemoController < ApplicationController
-end
