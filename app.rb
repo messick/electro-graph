@@ -11,7 +11,7 @@ require 'time'
 Mongoid.load!("./config/mongoid.yml")
 
 get '/' do
-  'Hello world!'
+  redirect '/demo'
 end
 
 get '/demo' do
