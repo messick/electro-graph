@@ -3,17 +3,17 @@ electro-graph
 
 Data visualization for electric car statistics.
 
-#. brew install mongodb
-#. git clone git@github.com:messick/electro-graph
-#. cd electro-graph
-#. bundle install
+1. brew install mongodb
+1. git clone git@github.com:messick/electro-graph
+1. cd electro-graph
+1. bundle install
 
 Dummy Data Insert
 -----------------
 
-#. ruby data_insert.rb
+1. ruby data_insert.rb
 
 App Server Start
 ----------------
 
-#. ruby app.rb
+1. ruby app.rb
